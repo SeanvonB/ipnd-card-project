@@ -1,0 +1,209 @@
+@font-face {
+    font-family: Matrix-Bold;
+    src: url(fonts/Matrix-Bold.ttf);
+}
+
+@font-face {
+    font-family: Matrix-Bold-Script;
+    src: url(fonts/Matrix-Bold-Script.ttf);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-style: italic;
+}
+
+.card {
+    width: 360px;
+    height: 510px;
+    margin: 25px auto;
+    border: 15px solid rgb(25,25,25);
+    border-radius: 10px;
+    box-shadow: -5px 5px 10px 0 rgba(25,25,25,0.5);
+    background-color: rgb(25,25,25);
+}
+
+    .card-background {
+        width: 360px;
+        height: 450px;
+        background-image: url("images/background01.jpg");
+        border: none;
+        border-radius: 10px 10px 50px 50px;
+    }
+
+        article {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            font-family: Matrix-Bold;
+
+        }
+
+            .title-bar {
+                width: 335px;
+                height: 30px;
+                margin-top: 10px;
+                border: 2px solid rgb(25,25,25);
+                border-radius: 15px/45px;
+                background: radial-gradient(rgb(255,255,175), rgb(255,225,175));
+                box-shadow:
+                    0 0 0 3px rgb(225,200,100),
+                    -2px 0 0 3px rgb(25,25,25),
+                    inset 2px -3px 0 rgb(150,150,125),
+                    inset -2px 3px 0 rgb(255,255,225);
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+                .name {
+                    margin-left: 10px;
+                    font-size: 17pt;
+                }
+
+                .mana {
+                    margin-right: 10px;
+                    margin-bottom: 2px;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                    .colorless {
+                        width: 20px;
+                        height: 19px;
+                        padding-top: 1px;
+                        margin: 1px;
+                        background-color: rgb(200,190,190);
+                        border-radius: 10px;
+                        box-shadow: -1px 1px rgb(25,25,25);
+                        text-align: center;
+                        font-family: serif;
+                        font-weight: bold;
+                    }
+
+                    .honeycomb {
+                        width: 20px;
+                        height: 20px;
+                        margin: 1px;
+                        background-color: rgb(225,200,100);
+                        border-radius: 10px;
+                        box-shadow: -1px 1px rgb(25,25,25);
+                        text-align: center;
+                        line-height: 23px;
+                        font-weight: bolder;
+                    }
+
+            .image {
+                margin: 3px;
+                border-left: 10px solid rgb(0,0,0);
+                border-right: 10px solid rgb(0,0,0);
+                box-shadow:
+                    2px 0 rgb(150,150,125),
+                    -2px 0 rgb(150,150,125),
+                    2px 0 0 3px rgb(225,200,100),
+                    -2px 0 0 3px rgb(225,200,100),
+                    -2px 4px 0 5px rgb(25,25,25);
+            }
+
+            .type-bar {
+                width: 335px;
+                height: 30px;
+                border: 2px solid rgb(25,25,25);
+                border-radius: 15px/45px;
+                background: radial-gradient(rgb(255,255,175), rgb(255,225,175));
+                box-shadow:
+                    0 0 0 3px rgb(225,200,100),
+                    -2px 0 0 3px rgb(25,25,25),
+                    inset 2px -3px 0 0 rgb(150,150,125),
+                    inset -2px 3px 0 0 rgb(255,255,225);
+                display: flex;
+                flex-flow: column flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+                .type {
+                    margin-left: 10px;
+                    font-size: 17pt;
+                }
+
+                .expansion {
+                    width: 24px;
+                    height: 15px;
+                    margin-right: 15px;
+                    padding-right: 1px;
+                    border: 1.5px solid rgb(25,25,25);
+                    border-radius: 15px 0 15px 0;
+                    background: linear-gradient(to top right, rgb(215,175,55), rgb(225,225,235), rgb(215,175,55));
+                    font-family: Matrix-Bold-Script;
+                    font-weight: bold;
+                    font-size: 10pt;
+                    text-align: center;
+                    line-height: 12px;
+                }
+
+            .content {
+                width: 304px;
+                height: 140px;
+                padding: 20px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border: 3px solid rgb(225,200,100);
+                background: rgb(255,255,215);
+                box-shadow:
+                -2px 2px rgb(25,25,25),
+                inset -2px 2px rgb(150,150,125),
+                inset 2px -2px rgb(255,255,235);
+                color: rgb(50,50,50);
+                font-family: Georgia, serif;
+                font-size: 10pt;
+            }
+
+            .power-toughness-bar {
+                width: 60px;
+                height: 30px;
+                position: relative;
+                    left: 260px;
+                    bottom: 15px;
+                border-radius: 15px/45px;
+                background: rgb(255,255,215);
+                box-shadow:
+                    0 0 0 3px rgb(225,200,100),
+                    -2px 2px 5px 2px rgb(25,25,25),
+                    inset 2px -3px 0 0 rgb(255,255,225),
+                    inset -2px 3px 0 0 rgb(150,150,125);
+                display: flex;
+                flex-flow: column flex;
+                align-items: center;
+            }
+
+                .power-toughness {
+                    margin-left: 13px;
+                    margin-top: 3px;
+                    font-size: 22px;
+                    text-align: center;
+                    font-weight: bold;
+                }
+            .footnotes {
+                width: 330px;
+                height: 30px;
+                margin-top: 10px;
+                font-size: 8pt;
+                color: rgb(215,215,215);
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+            }
+            
+                .trademark {
+                    position: relative;
+                    top: 15px;
+                }
